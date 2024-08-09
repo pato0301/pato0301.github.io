@@ -9,20 +9,21 @@ body {
 
 .container {
   display: flex;
-  height: 98vh;
-  justify-content: center;
-  align-items: center;
+  /* height: 98vh; */
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  /* justify-content: center; */
+  /* align-items: center; */
 }
 
 /* Sidebar Styles */
 .sidebar {
   /* width: 30%; */
-  width: 24rem;
+  /* width: 24rem; */
   /* background-color: #f9fafb; */
   --tw-bg-opacity: 1;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
-  padding: 20px;
-  box-sizing: border-box;
   border-radius: 0.75rem;
 }
 
@@ -123,43 +124,126 @@ body {
   margin: 5px;
 }
 
-/* Projects Section Styles */
-.projects {
-  width: 75%;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-.projects h3 {
-  font-size: 24px;
-  margin-bottom: 20px;
-  color: #4047f9;
-}
-
-.project-item {
-  margin-bottom: 20px;
-}
-
-.project-item h4 {
-  font-size: 20px;
-  color: #333333;
-  margin-bottom: 5px;
-}
-
-.project-item p {
-  font-size: 14px;
-  color: #666666;
-}
-
 .skill-button {
-  padding: 0.25rem 0.5rem; /* Equivalent to Tailwind's `px-2 py-1` */
-  border-radius: 9999px; /* Equivalent to Tailwind's `rounded-full` */
-  font-size: 0.75rem; /* Equivalent to Tailwind's `text-xs` */
-  font-weight: 500; /* Slightly adjusted from Tailwind's `font-sm` */
-  background-color: #eff1ff; /* Replace with the exact shade for `bg-ds_blue_light` */
-  color: #4047f9; /* Replace with the exact shade for `text-ds_blue` */
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  background-color: #eff1ff;
+  color: #4047f9;
   border: none;
-  margin-right: 0.25rem; /* Equivalent to Tailwind's `mr-1` */
-  margin-bottom: 0.25rem; /* Equivalent to Tailwind's `mb-1` */
-  cursor: default; /* Equivalent to Tailwind's `cursor-default` */
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
+  cursor: default;
+}
+
+.projects {
+  width: 100%;
+}
+
+.projects-subsection {
+  padding: 1rem;
+}
+
+.projects-headline {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  display: flex;
+}
+
+.projects-grid {
+  gap: 1.5rem;
+  display: grid;
+  margin-top: 0.5rem;
+}
+
+.projects-grid .group {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.group img {
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
+  border-width: 1px;
+  border-radius: 0.75rem;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  vertical-align: middle;
+  max-width: 415px;
+  max-height: 135px;
+  object-fit: cover;
+}
+
+.group .project-item-title {
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
+  font-weight: 600;
+  margin-top: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.group .project-item-description {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.group .project-item-readme {
+  --tw-text-opacity: 1;
+  color: rgb(2 10 245 / var(--tw-text-opacity));
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  padding-right: 0.25rem;
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+  --tw-border-opacity: 1;
+  border-color: rgb(2 10 245 / var(--tw-border-opacity));
+  border-width: 0px;
+  align-items: center;
+  display: flex;
+  margin-top: 0.25rem;
+}
+
+.group .project-item-readme .arrow-logo {
+  width: 0.75rem;
+  height: 0.75rem;
+  margin-left: 0.125rem;
+}
+
+@media (min-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    gap: 0px;
+    display: flex;
+  }
+  .sidebar {
+    width: 24rem;
+    flex: none;
+  }
+}
+
+@media (min-width: 640px) {
+  .sidebar {
+    padding: 1.5rem;
+  }
+  .projects-subsection {
+    padding: 1.5rem;
+  }
 }
