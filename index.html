@@ -27,9 +27,9 @@
               <p class="headline">Senior Data Analyst @ Landbot</p>
               <p class="section-header">Based in Barcelona, Spain</p>
               <div class="links">
-                  <a href="https://github.com/pato0301" class="github"><i class="bx bxl-github"></i></a>
-                  <a href="https://www.linkedin.com/in/patricio-villanueva/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-                  <a href="https://patonv.medium.com/" class="medium"><i class="bx bxl-medium"></i></a>
+                <a href="https://www.linkedin.com/in/patricio-villanueva/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://github.com/pato0301" class="github"><i class="bx bxl-github"></i></a>
+                <a href="https://patonv.medium.com/" class="medium"><i class="bx bxl-medium"></i></a>
               </div>
           </div>
           <div class="about">
@@ -63,6 +63,7 @@
           <div>
             <p class="projects-headline">Projects</p>
             <div class="projects-grid">
+              <!-- Starbucks Rewards Program Analysis -->
               <div>
                 <a href="/projects/starbucks/" class="group">
                   <img class="project-item-photo" src="/assets/img/projects_image/starbucks.jpg" alt="Starbucks project photo">
@@ -71,11 +72,56 @@
                       <button class="skill-button">Python</button>
                       <button class="skill-button">Pandas</button>
                       <button class="skill-button">Numpy</button>
-                      <button class="skill-button">sklearn</button>
+                      <button class="skill-button">Sklearn</button>
                       <button class="skill-button">Machine Learning</button>
                   </div>
                   <p class="project-item-description">
                     Analysis of Starbucks customer data to uncover insights that can help the company boost sales, improve customer loyalty, and optimize marketing costs by sending the right offers to customers. By leveraging customer demographics, the analysis aids in tailoring targeted promotional strategies.
+                  </p>
+                  <div class="project-item-readme">
+                    Read more
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" stroke-width="1.5" stroke="currentColor" class="arrow-logo">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
+                      </svg>
+                  </div>              
+                </a>
+              </div>
+              <!-- Sparkify Churn Analysis -->
+              <div>
+                <a href="/projects/sparkify/" class="group">
+                  <img class="project-item-photo" src="/assets/img/projects_image/sparkify.jpg" alt="Starbucks project photo">
+                  <p class="project-item-title">Sparkify Churn Analysis</p>
+                  <div class="skills-list">
+                      <button class="skill-button">Python</button>
+                      <button class="skill-button">Pandas</button>
+                      <button class="skill-button">Numpy</button>
+                      <button class="skill-button">PySpark</button>
+                  </div>
+                  <p class="project-item-description">
+                    Analysis of user behavior to predict customer churn for Sparkify, a music streaming service. By identifying key features like user engagement and demographics, the analysis helps Sparkify boost retention by targeting likely churners with special offers, optimizing marketing efforts and reducing cost.
+                  </p>
+                  <div class="project-item-readme">
+                    Read more
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" stroke-width="1.5" stroke="currentColor" class="arrow-logo">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
+                      </svg>
+                  </div>              
+                </a>
+              </div>
+              <!-- DBT CI Blogpost -->
+              <div>
+                <a href="/projects/dbt-ci-implementation/" class="group">
+                  <img class="project-item-photo" src="/assets/img/projects_image/dbt-logo.png" alt="Starbucks project photo">
+                  <p class="project-item-title">A CI implementation for your data warehouse with DBT</p>
+                  <div class="skills-list">
+                      <button class="skill-button">Data Building Tool (DBT)</button>
+                      <button class="skill-button">DBT Cloud</button>
+                      <button class="skill-button">SQL</button>
+                      <button class="skill-button">BigQuery</button>
+                      <button class="skill-button">CI/CD</button>
+                  </div>
+                  <p class="project-item-description">
+                    At Landbot, we use dbt to develop and manage our Data Warehouse (DWH), focusing on maintaining data accuracy as we introduce or update models. To achieve this, we've adopted a Continuous Integration (CI) and Continuous Delivery (CD) workflow, where every Pull Request triggers a suite of tests and, upon merging, automatically initiates a production build. This blog post outlines our simple method for implementing CI with DBT Cloud and Gitlab/Github, which has allowed us to accelerate development, ensure data quality, and reduce costs.
                   </p>
                   <div class="project-item-readme">
                     Read more
